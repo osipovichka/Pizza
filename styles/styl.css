@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo&display=swap");
+@font-face {
+  font-family: "SegoeUIRegular";
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SegoeUIBold";
+  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
+  src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"), url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SegoeUIItalic";
+  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
+  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"), url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SegoeUILight";
+  src: url("../fonts/SegoeUILight/SegoeUILight.eot");
+  src: url("../fonts/SegoeUILight/SegoeUILight.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUILight/SegoeUILight.woff") format("woff"), url("../fonts/SegoeUILight/SegoeUILight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SegoeUISemiBold";
+  src: url("../fonts/SegoeUISemiBold/SegoeUISemiBold.eot");
+  src: url("../fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"), url("../fonts/SegoeUISemiBold/SegoeUISemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.font-baloo {
+  font-family: 'Baloo', cursive;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "SegoeUIRegular";
+  margin: 0;
+  padding: 0;
+  color: #242424;
+}
+
+.container {
+  max-width: 1920px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  width: 232px;
+  height: 64px;
+  border-radius: 50px;
+  border: none;
+  background: #F8A22F;
+  cursor: pointer;
+}
+
+.button a {
+  font-family: "SegoeUISemiBold";
+  color: white;
+  font-size: 22px;
+}
+
+.food-logo-and-nav-menu {
+  height: 1080px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.food-logo {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 141px;
+  width: 34%;
+}
+
+.food-logo .logo {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 43px;
+  font-weight: bold;
+  margin-top: 41px;
+}
+
+.food-logo .logo .words-color {
+  color: #F8A22F;
+}
+
+.food-logo .headline {
+  font-size: 71px;
+  line-height: 92px;
+  font-weight: normal;
+}
+
+.food-logo .headline .words-color {
+  color: #F8A22F;
+}
+
+.food-logo .text {
+  font-size: 26px;
+  line-height: 41px;
+  opacity: .5;
+  margin-bottom: 80px;
+}
+
+.food-logo .social-network {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 77px;
+}
+
+.food-logo .social-network a {
+  margin-right: 50px;
+}
+
+.food-logo .social-network a:last-child {
+  margin-right: 0;
+}
+
+.scrol {
+  position: absolute;
+  bottom: 57px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.font-nav-menu {
+  width: 69%;
+  position: relative;
+}
+
+.font-nav-menu .font {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.font-nav-menu .nav-menu {
+  width: 900px;
+  position: absolute;
+  padding-top: 41px;
+  right: 141px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.font-nav-menu .nav-menu a {
+  font-family: "SegoeUISemiBold";
+  color: white;
+  font-size: 24px;
+  opacity: .7;
+}
+
+.font-nav-menu .nav-menu a:hover {
+  color: white;
+}
+
+.our-product-range {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.our-product-range .our-food {
+  font-size: 71px;
+}
+
+.our-product-range .our-food a {
+  color: #242424;
+}
+
+.our-product-range .menu {
+  font-size: 33px;
+}
+
+@media (max-width: 900px) {
+  .food-logo-and-nav-menu {
+    height: 100px;
+    position: relative;
+  }
+  .social-network,
+  .scrol,
+  .text,
+  .contact {
+    display: none;
+  }
+  .food-logo {
+    margin-left: 20px;
+  }
+  .food-logo .logo {
+    font-size: 100%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .food-logo .headline {
+    font-size: 90%;
+    line-height: 20px;
+  }
+  .food-logo .order-food {
+    width: 100%;
+    height: 30%;
+    margin-top: 25px;
+  }
+  .food-logo .order-food a {
+    font-size: 100%;
+  }
+  .font-nav-menu .nav-menu {
+    width: 82%;
+    padding-top: 20px;
+    right: 10px;
+  }
+  .font-nav-menu .nav-menu .a {
+    font-size: 75%;
+    color: white;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=styl.css.map */
