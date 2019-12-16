@@ -1,173 +1,132 @@
 @import'base';
 
-.food-logo-and-nav-menu {
-    height: 1080px;
-    justify-content: space-between;
-    position: relative;
-}
-
-.food-logo {
-    justify-content: space-between;
-    margin-left: 141px;
-    width: 34%;
-    
-    .logo {
-        justify-content: space-between;
-        font-size: 43px;
-        font-weight: bold;
-        margin-top: 41px;
-
-        .words-color {
-            color: $words-color;
-        }
-    }
-
-      .headline {
-            font-size: 71px;
-            line-height: 92px;
-            font-weight: normal;
-    
-            .words-color {
-                color: $words-color;
-            }
-        }
-    
-        .text {
-            font-size: 26px;
-            line-height: 41px;
-            opacity: .5;
-            margin-bottom: 80px;
-        }
-
-    .social-network {
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 77px;
-
-        a {
-            margin-right: 50px;
-        }
-        a:last-child {
-            margin-right: 0;
-        }
-    }
-}
-
-.scrol {
-    position: absolute;
-    bottom: 57px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.font-nav-menu {
-    width: 69%;
+.header{
     position: relative;
 
-    .font {
-        width: 100%;
+    .font-header {
+        width: 70%;
         position: absolute;
         top: 0;
         right: 0;
+        z-index: 1;
     }
+}
 
-    .nav-menu {
-        width: 900px;
-        position: absolute;
-        padding-top: 41px;
-        right: 141px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-            
+
+.logo-and-menu {
+    justify-content: space-between;
+    align-items: center;
+    padding: 51px 140px;
+
+    .logo {
+        font-family: "SegoeUIBold";
+        font-size: 43px;
+    }
+}
+
+.nav-menu {
+    width: 65%;
+    z-index: 2;
+    align-items: center;
+
+    nav {
+        width: 61%;
+        margin-right: 10%;
+
+        ul {
+            justify-content: space-between;
+        }
+
         a {
             font-family: "SegoeUISemiBold";
-            color: white;
             font-size: 24px;
+            color: #FFFFFF;
             opacity: .7;
-    
-            &:hover {
-                color: white;
-            }
-        }
+        } 
     }
 }
 
-.our-product-range {
-    align-items: center;
+.text {
+    font-family: "SegoeUIRegular";
+    padding: 226px 140px;
+
+    h1 { 
+        font-size: 71px;
+        line-height: 92px;
+        font-weight: normal;
+    }
+
+    p {
+        font-size: 26px;
+        line-height: 41px;
+        opacity: .5;
+        margin-top: 41px;
+        margin-bottom: 80px;
+    }
+}
+
+.social-networks-and-scrolling {
     justify-content: space-between;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    align-items: center;
+    padding-left: 140px;
+    position: relative;
+
+    .social-networks {
+        width: 196px;
+        justify-content: space-between;
+    }
+
+    .scrolling {
+        position: absolute;
+        bottom: 0;
+        left: 40%
+    }
+}
+
+.container-our-food {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.our-food-cards {
+    margin: 0 135px;
 
     .our-food {
+        font-family: "SegoeUIRegular";
         font-size: 71px;
+        color: #242424;
+        margin-bottom: 60px;
+    }
 
-        a {
-            color: $primary-color;
+    .card-product-description {
+        margin: 20px 0;
+    }
+
+    .card {
+
+        img {
+            margin-right: 30px;
+        }
+
+        span {
+            font-family: "SegoeUISemiBold";
+            font-size: 33px;
+            color: #242424;
         }
     }
 
-    .menu {
-        font-size: 33px;
-    }
-}
-
-@media (max-width: 900px) {
-
-    .food-logo-and-nav-menu {
-        height: 100px;
-        position: relative;
+    .product-description {
+        font-family: "SegoeUIRegular";
+        margin-left: 93px;
+        line-height: 33px;
+        font-size: 21px;
+        opacity: .5;
     }
 
-    .social-network,
-    .scrol,
-    .text,
-    .contact {
-        display: none;
-    }
-
-
-    .food-logo {
-        margin-left: 20px;
-        
-        .logo {
-            font-size: 100%;
-            margin-top: 20px;
-            margin-bottom: 15px;
-        }
-
-        .headline {
-        font-size: 90%;
-        line-height: 20px;
-        } 
-
-        .order-food {
-            width: 100%;
-            height: 30%;
-            margin-top: 25px;
-
-            a {
-                font-size: 100%;
-            }
-        }
-    }
-
-    .font-nav-menu{
-
-        .nav-menu {
-            width: 82%;
-            padding-top: 20px;
-            right: 10px;
-
-            .a {
-                font-size: 75%;
-                color:  white;
-                opacity: 1;
-            }
-        }
+    button {
+        margin-top: 60px;
     }
 }
 
 
-
-
+    

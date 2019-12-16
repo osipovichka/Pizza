@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Baloo&display=swap');
-$primary-color: #242424;
 $button-color: #F8A22F;
 $words-color: #F8A22F;
 
@@ -53,23 +51,15 @@ $words-color: #F8A22F;
     font-weight: normal;
 }
 
-.font-baloo {
-    font-family: 'Baloo', cursive;
-}
-
 * {
     box-sizing: border-box;
-}
-
-body {
-    font-family: "SegoeUIRegular";
     margin: 0;
     padding: 0;
-    color: $primary-color;
 }
 
 .container {
     max-width: 1920px;
+    margin: 0 auto;
 }
 
 .flex {
@@ -79,13 +69,18 @@ body {
 .column-flex {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-a {
+a{ 
     text-decoration: none;
+} 
+
+li {
+    list-style-type: none;
 }
 
-.button {
+button {
     width: 232px;
     height: 64px;
     border-radius: 50px;
@@ -93,9 +88,13 @@ a {
     background: $button-color;
     cursor: pointer;
 
-    a{
+    a {
         font-family: "SegoeUISemiBold";
-        color: white;
         font-size: 22px;
+        color: #FFFFFF;
     }
+}
+
+.words-color {
+    color: $words-color;
 }

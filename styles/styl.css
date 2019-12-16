@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Baloo&display=swap");
 @font-face {
   font-family: "SegoeUIRegular";
   src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
@@ -39,24 +38,16 @@
   font-weight: normal;
 }
 
-.font-baloo {
-  font-family: 'Baloo', cursive;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-body {
-  font-family: "SegoeUIRegular";
   margin: 0;
   padding: 0;
-  color: #242424;
 }
 
 .container {
   max-width: 1920px;
+  margin: 0 auto;
 }
 
 .flex {
@@ -73,13 +64,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 a {
   text-decoration: none;
 }
 
-.button {
+li {
+  list-style-type: none;
+}
+
+button {
   width: 232px;
   height: 64px;
   border-radius: 50px;
@@ -88,186 +86,151 @@ a {
   cursor: pointer;
 }
 
-.button a {
+button a {
   font-family: "SegoeUISemiBold";
-  color: white;
   font-size: 22px;
+  color: #FFFFFF;
 }
 
-.food-logo-and-nav-menu {
-  height: 1080px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-}
-
-.food-logo {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 141px;
-  width: 34%;
-}
-
-.food-logo .logo {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 43px;
-  font-weight: bold;
-  margin-top: 41px;
-}
-
-.food-logo .logo .words-color {
+.words-color {
   color: #F8A22F;
 }
 
-.food-logo .headline {
+.header {
+  position: relative;
+}
+
+.header .font-header {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.logo-and-menu {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 51px 140px;
+}
+
+.logo-and-menu .logo {
+  font-family: "SegoeUIBold";
+  font-size: 43px;
+}
+
+.nav-menu {
+  width: 65%;
+  z-index: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-menu nav {
+  width: 61%;
+  margin-right: 10%;
+}
+
+.nav-menu nav ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-menu nav a {
+  font-family: "SegoeUISemiBold";
+  font-size: 24px;
+  color: #FFFFFF;
+  opacity: .7;
+}
+
+.text {
+  font-family: "SegoeUIRegular";
+  padding: 226px 140px;
+}
+
+.text h1 {
   font-size: 71px;
   line-height: 92px;
   font-weight: normal;
 }
 
-.food-logo .headline .words-color {
-  color: #F8A22F;
-}
-
-.food-logo .text {
+.text p {
   font-size: 26px;
   line-height: 41px;
   opacity: .5;
+  margin-top: 41px;
   margin-bottom: 80px;
 }
 
-.food-logo .social-network {
+.social-networks-and-scrolling {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 77px;
-}
-
-.food-logo .social-network a {
-  margin-right: 50px;
-}
-
-.food-logo .social-network a:last-child {
-  margin-right: 0;
-}
-
-.scrol {
-  position: absolute;
-  bottom: 57px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.font-nav-menu {
-  width: 69%;
+  padding-left: 140px;
   position: relative;
 }
 
-.font-nav-menu .font {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.font-nav-menu .nav-menu {
-  width: 900px;
-  position: absolute;
-  padding-top: 41px;
-  right: 141px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.social-networks-and-scrolling .social-networks {
+  width: 196px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.font-nav-menu .nav-menu a {
-  font-family: "SegoeUISemiBold";
-  color: white;
-  font-size: 24px;
-  opacity: .7;
+.social-networks-and-scrolling .scrolling {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
 }
 
-.font-nav-menu .nav-menu a:hover {
-  color: white;
+.container-our-food {
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
-.our-product-range {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 200px;
-  padding-bottom: 200px;
+.our-food-cards {
+  margin: 0 135px;
 }
 
-.our-product-range .our-food {
+.our-food-cards .our-food {
+  font-family: "SegoeUIRegular";
   font-size: 71px;
+  color: #242424;
+  margin-bottom: 60px;
 }
 
-.our-product-range .our-food a {
+.our-food-cards .card-product-description {
+  margin: 20px 0;
+}
+
+.our-food-cards .card img {
+  margin-right: 30px;
+}
+
+.our-food-cards .card span {
+  font-family: "SegoeUISemiBold";
+  font-size: 33px;
   color: #242424;
 }
 
-.our-product-range .menu {
-  font-size: 33px;
+.our-food-cards .product-description {
+  font-family: "SegoeUIRegular";
+  margin-left: 93px;
+  line-height: 33px;
+  font-size: 21px;
+  opacity: .5;
 }
 
-@media (max-width: 900px) {
-  .food-logo-and-nav-menu {
-    height: 100px;
-    position: relative;
-  }
-  .social-network,
-  .scrol,
-  .text,
-  .contact {
-    display: none;
-  }
-  .food-logo {
-    margin-left: 20px;
-  }
-  .food-logo .logo {
-    font-size: 100%;
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-  .food-logo .headline {
-    font-size: 90%;
-    line-height: 20px;
-  }
-  .food-logo .order-food {
-    width: 100%;
-    height: 30%;
-    margin-top: 25px;
-  }
-  .food-logo .order-food a {
-    font-size: 100%;
-  }
-  .font-nav-menu .nav-menu {
-    width: 82%;
-    padding-top: 20px;
-    right: 10px;
-  }
-  .font-nav-menu .nav-menu .a {
-    font-size: 75%;
-    color: white;
-    opacity: 1;
-  }
+.our-food-cards button {
+  margin-top: 60px;
 }
 /*# sourceMappingURL=styl.css.map */
